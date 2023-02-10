@@ -1,0 +1,173 @@
+3.1.2 :006 > empty_squares = %w(1B 1C 1D 1F 1G 1I 2A 2C 2E 2H 2I 2J 3B 3D 3F 3G 3H 3J 4C 4D 4E 4H 4I 4J 5A 5B 5D 5H 5I 6C 6E 6F 6G 6H 6I 6J 7A 7B 7C 7E 7I 8A 8B 8D 8E 9A 9B 9C 9D 9G 9I 10B 10D 10E 10F 10I)
+ => 
+["1B",
+... 
+3.1.2 :007 > empty_squares.shuffle!
+ => 
+["10B",                                                    
+ "2C",                                                     
+ "9B",                                                     
+ "1I",                                                     
+ "10I",                                                    
+ "7A",                                                     
+ "1B",                                                     
+ "3H",                                                     
+ "4D",                                                     
+ "2J",                                                     
+ "3J",                                                     
+ "9G",                                                     
+ "5H",                                                     
+ "6H",                                                     
+ "2E",
+ "9I",
+ "6I",
+ "5I",
+ "10F",
+ "5D",
+ "1C",
+ "6E",
+ "4H",
+ "1D",
+ "8D",
+ "10E",
+ "3F",
+ "7E",
+ "2A",
+ "6C",
+ "1G",
+ "2I",
+ "6F",
+ "8A",
+ "5B",
+ "2H",
+ "3B",
+ "8B",
+ "6G",
+ "7B",
+ "3D",
+ "3G",
+ "4J",
+ "4E",
+ "4I",
+ "1F",
+ "5A",
+ "8E",
+ "9C",
+ "10D",
+ "4C",
+ "6J",
+ "7C",
+ "9D",
+ "9A",
+ "7I"] 
+3.1.2 :008 > squares_purchasers = ['Shannon S.', 'Tanika C.', 'Christine S.', 'Heather C.', 'Meghan P.', 'Ryan H.', 'Jeremy C.', 'Tanika C.', 'Andi P.', 'Shannon S.', 'Ryan H.', 'Larry C.', 'Jeremy C.', 'Christine S.', 'Ryan H.', 'Jeremy C.', 'Mary P.', 'Shannon S.', 'Heather C.', 'Ryan H.', 'Jeremy C.', 'Andi P.', 'Tanika C.', 'Jeremy C.', 'Tanika C.', 'Chris C.', 'Shannon S.', 'Chris C.', 'Chris C.', 'Larry C.', 'Chris C.', 'Chris C.', 'Chris C.', 'Meghan P.', 'Chris C.', 'Christine S.', 'Chris C.', 'Chris C.', 'Chris C.', 'Heather C.', 'Andi P.', 'Andi P.', 'Jeremy C.', 'Shannon S.']
+ => 
+["Shannon S.",                          
+...                                     
+3.1.2 :009 > squares_purchasers.shuffle!
+ => 
+["Chris C.",                                                    
+ "Tanika C.",                                                   
+ "Tanika C.",                                                   
+ "Chris C.",                                                    
+ "Ryan H.",                                                     
+ "Jeremy C.",                                                   
+ "Chris C.",                                                    
+ "Jeremy C.",                                                   
+ "Chris C.",                                                    
+ "Chris C.",                                                    
+ "Heather C.",                                                  
+ "Larry C.",                                                    
+ "Ryan H.",                                                     
+ "Christine S.",                                                
+ "Andi P.",
+ "Jeremy C.",
+ "Jeremy C.",
+ "Andi P.",
+ "Jeremy C.",
+ "Mary P.",
+ "Andi P.",
+ "Meghan P.",
+ "Christine S.",
+ "Larry C.",
+ "Jeremy C.",
+ "Ryan H.",
+ "Andi P.",
+ "Meghan P.",
+ "Chris C.",
+ "Heather C.",
+ "Ryan H.",
+ "Shannon S.",
+ "Heather C.",
+ "Chris C.",
+ "Christine S.",
+ "Chris C.",
+ "Shannon S.",
+ "Tanika C.",
+ "Tanika C.",
+ "Shannon S.",
+ "Chris C.",
+ "Shannon S.",
+ "Shannon S.",
+ "Chris C."] 
+3.1.2 :010 > empty_squares.each_with_index do |square, index|; if index < squares_purchasers.count; puts "#{square} - #{squar
+es_purchasers[index]}"; else; puts "#{square} - EMPTY"; end; end; puts ''; 
+10B - Chris C.
+2C - Tanika C.                                                 
+9B - Tanika C.                                                 
+1I - Chris C.                                                  
+10I - Ryan H.                                                  
+7A - Jeremy C.                                                 
+1B - Chris C.                                                  
+3H - Jeremy C.                                                 
+4D - Chris C.                                                  
+2J - Chris C.                                                  
+3J - Heather C.                                                
+9G - Larry C.                                                  
+5H - Ryan H.                                                   
+6H - Christine S.                                              
+2E - Andi P.
+9I - Jeremy C.
+6I - Jeremy C.
+5I - Andi P.
+10F - Jeremy C.
+5D - Mary P.
+1C - Andi P.
+6E - Meghan P.
+4H - Christine S.
+1D - Larry C.
+8D - Jeremy C.
+10E - Ryan H.
+3F - Andi P.
+7E - Meghan P.
+2A - Chris C.
+6C - Heather C.
+1G - Ryan H.
+2I - Shannon S.
+6F - Heather C.
+8A - Chris C.
+5B - Christine S.
+2H - Chris C.
+3B - Shannon S.
+8B - Tanika C.
+6G - Tanika C.
+7B - Shannon S.
+3D - Chris C.
+3G - Shannon S.
+4J - Shannon S.
+4E - Chris C.
+4I - EMPTY
+1F - EMPTY
+5A - EMPTY
+8E - EMPTY
+9C - EMPTY
+10D - EMPTY
+4C - EMPTY
+6J - EMPTY
+7C - EMPTY
+9D - EMPTY
+9A - EMPTY
+7I - EMPTY
+
+ => nil 
+3.1.2 :011 > 
